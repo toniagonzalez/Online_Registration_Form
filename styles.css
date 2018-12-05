@@ -1,0 +1,192 @@
+/*-------Base Styles-------*/
+
+body {
+  color: grey;
+  font-weight: lighter;
+  font-family: 'Merriweather', serif;
+  text-align: left;
+  width: 100%;
+  margin: auto 0;
+}
+
+form,
+button,
+fieldset,
+textarea, {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  color: white;
+  font-variant-caps: all-petite-caps;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 25px;
+  height: 100px;
+  background: #0d1a26;
+}
+
+.intro {
+  text-align: center;
+  border-bottom: 5px #0d1a26 solid;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  margin: 0 5%;
+  margin-bottom: 5px;
+}
+
+.border {
+  border-top: 2px #0d1a26 solid;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 25px;
+}
+
+.contact label {
+  color: #0d1a26;
+}
+
+legend {
+  color:#0d1a26;
+  font-weight: bold;
+  display: block;
+}
+
+input,
+select {
+  display: flex;
+  width: 100%;
+  height: 4em;
+  color: grey;
+  background-color: rgba(0,0,0, .1);
+  font-size: 1em;
+  box-sizing: border-box;
+  margin-top: 10px;
+  border-style: none;
+  transition: border 1s;
+}
+
+legend {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+fieldset {
+  border-style: none;
+}
+
+footer {
+  font-style: italic;
+  text-align: center;
+}
+
+/*-------Input Styles-------*/
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+   padding-left: 8px;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  border: 1px #0d1a26 solid;
+}
+
+input:focus,
+input:required:focus {
+  border: 1px solid;
+  background-color: white;
+  transition: border 2s;
+}
+
+input[id="zip"] {
+  width: 200px;
+}
+
+input[placeholder] {
+  font-style: italic;
+  padding-left: 8px;
+}
+
+input:required {
+  background-color: #ffffcc;
+}
+
+[placeholder]:required {
+  direction: ltr;
+  text-align: right;
+  padding-right: 8px;
+}
+
+[placeholder]:focus {
+   text-align: left;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  margin: 15px 0;
+}
+
+textarea {
+  font-size: 1em;
+  width: 100%;
+  min-height: 125px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0,0,0, .1);
+  margin: 25px 0;
+}
+
+/*-------Button-------*/
+
+button {
+  background: #00b3b3;
+  color: white;
+  font-family: 'Oswald', sans-serif;;
+  font-size: 1.5em;
+  border-radius: 8px;
+  width: 100%;
+  height: 75px;
+  margin: 0 0 20px 0;
+}
+
+button:hover {
+  border: 2px #0d1a26 solid;
+}
+
+/*-------Media Query-------*/
+
+@media (min-width: 768px) {
+
+    .intro,
+    .border,
+    fieldset {
+      width: 75%;
+      margin: auto;
+    }
+
+    .contact input,
+    .contact select {
+      display: inline-flex;
+      width: 55%;
+      margin-bottom: 10px;
+    }
+
+    .contact label{
+      display: inline-flex;
+      align-items: flex-start;
+      width: 25%;
+    }
+
+    input[id="zip"] {
+      width: 25%;
+    }
+}
