@@ -11,12 +11,11 @@
 <body>
   <form action="index.html" method="post">
     <h1 class="header">The Code Review</h1>
-    <div class="intro">
-    <legend>Signup for Our Newsletter</legend>
-    <label>Get the latest news on how your code is doing right in your inbox</label>
-    </div>
-    <div class="border"></div>
-    <fieldset class="contact">
+    <fieldset class="intro">
+      <legend>Signup for Our Newsletter</legend>
+      <label>Get the latest news on how your code is doing right in your inbox</label>
+    </fieldset>
+    <fieldset class=" border contact">
       <legend>Contact Information</legend><br>
 
        <label for="name">Full Name</label>
@@ -93,16 +92,16 @@
         <label for="zip">Zip Code</label>
         <input type="text" pattern="" id="zip" maxlength="5" name="user_zip"><br>
       </fieldset>
-      <div class="border"></div>
-      <fieldset class="newsletter">
+
+      <fieldset>
         <legend>Newsletter</legend><br>
         <label>Select the newsletters you would like to recieve</label><br>
-        <input type="checkbox" id="html news" value="html news" name="news">
-        <label for="html news">HTML News</label><br>
-        <input type="checkbox" id="css news" value="css news" name="news">
-        <label for="css news">CSS News</label><br>
-        <input type="checkbox" id="javascript news" value="javascript news" name="news">
-        <label for="javascript news">Javascript News</label><br><br>
+        <input type="checkbox" id="htmlnews" value="htmlnews" name="news">
+        <label for="htmlnews">HTML News</label><br>
+        <input type="checkbox" id="cssnews" value="cssnews" name="news">
+        <label for="cssnews">CSS News</label><br>
+        <input type="checkbox" id="javascriptnews" value="javascriptnews" name="news">
+        <label for="javascriptnews">Javascript News</label><br><br>
 
         <label>Newsletter format</label><br>
         <input type="radio" id="html" name="format" value="HTML">
@@ -116,9 +115,7 @@
         <button type="submit">Sign Up</button>
         <footer>Copyright the Code Review</footer>
 
-
-
       </fieldset>
 
-  <form>
+  </form>
 </body>
